@@ -1,0 +1,119 @@
+:root {
+    --primary-white : hsl(0, 0%, 100%);
+    --primary-pink :  hsl(275, 100%, 97%);
+    --primary-purple :hsl(292, 16%, 49%);
+    --primary-dark-purple : hsl(292, 42%, 14%);    
+ 
+}
+
+
+*{
+    margin: 0;
+}
+.main{
+    min-height: 100vh;
+    background-color:var(--primary-pink) ;
+    position: relative;
+}
+
+.back-ground-image{
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 40vh;
+}
+
+
+.section-container {
+    /* border: solid cyan 2px; */
+    width: 25%;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 7px;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: -200px;
+}
+
+.title-main {
+ /*    border: solid red 1px; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    line-height: 2.4; 
+}
+.title-main h1{
+    margin-left: 7px;
+    font-weight: bolder;
+    font-size: 35px;
+    color: var(--primary-dark-purple);
+}
+
+.question-container{
+/*     border: solid blue 1px; */
+    box-shadow: -10px 0 15px rgba(0, 0, 0, .7);
+    margin-top: 10px;
+    padding: .7rem;
+    cursor: pointer;
+}
+
+
+.question-container .question{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    transition: all ease-in-out .5s;
+}
+
+.question-container .question p{
+    color: var(--primary-dark-purple);
+    font-weight: bold;
+    transition:  all ease-in-out .5s;
+}
+
+.question-container .question p:hover{
+    color: var(--primary-purple);
+    transition:  all ease-in-out .5s;
+}
+
+.question-container .question span{
+    cursor: pointer;
+}
+
+
+
+.question-container .answer{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--primary-purple);
+}
+
+.question-container .hidden{
+    display: none;
+}
+
+
+@media screen and (max-width:550px) {
+        .section-container{
+         /*    background-color: red; */
+            width: 70%;
+            margin-top: -100px;
+        }
+
+}
+
+@media screen and (min-width : 700px) and (max-width : 1050px) {
+        .section-container{
+           /*  background-color: rgb(126, 126, 230); */
+            width: 70%;
+            margin-top: -100px;
+        }
+}
+
+
+
